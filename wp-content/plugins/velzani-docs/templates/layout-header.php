@@ -533,6 +533,21 @@
         .docs-note-resolved {
             font-style: italic;
         }
+        
+        /* Mermaid Diagram Styles */
+        .mermaid {
+            background: var(--docs-bg);
+            padding: 20px;
+            border-radius: var(--docs-radius);
+            margin-bottom: 16px;
+            text-align: center;
+            overflow-x: auto;
+        }
+        
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
     <script>
         var vdocsData = {
