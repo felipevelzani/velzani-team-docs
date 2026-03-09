@@ -1,6 +1,15 @@
-# Suporte ao Cliente
+# Suporte e Operações
 
-Guia completo para atendimento ao cliente da Velzani, incluindo trocas, devoluções, problemas comuns e dicas práticas.
+Guia completo para atendimento ao cliente da Velzani, incluindo gestão de pedidos, trocas, devoluções e problemas comuns.
+
+## Sistemas Principais
+
+- **WooCommerce (Site principal):** [elevacalcados.com.br/wp-admin](https://elevacalcados.com.br/wp-admin) — Gerenciamento de pedidos e configurações da loja.
+- **Prod-Ops:** [prod-ops.velzani.com/wp-admin](https://prod-ops.velzani.com/wp-admin) — Gerenciamento de produtos, estoque e ferramentas internas.
+- **Bling:** Sistema de emissão de notas fiscais e controle de estoque integrado ao WooCommerce.
+- **TroqueCommerce:** [elevacalcados.troquecommerce.com.br](https://elevacalcados.troquecommerce.com.br/) — Gerenciamento de trocas e devoluções.
+- **Loggi:** Transportadora principal para envio de pedidos.
+- **Mercado Pago:** Processamento de pagamentos e gestão de contestações.
 
 ## Canais de Atendimento
 
@@ -32,6 +41,68 @@ Sempre que um cliente reportar erro no site:
 2. Se o erro persistir, **tente reproduzir o problema** usando os dados do cliente (endereço, CEP, etc.).
 3. Se você conseguir reproduzir, escale para o time técnico com detalhes do erro.
 4. Se não conseguir reproduzir, o problema provavelmente é local do cliente.
+
+## Gestão de Pedidos
+
+### Fluxo do Pedido
+
+```mermaid
+flowchart TD
+    A[Cliente faz o pedido] --> B[Pagamento confirmado]
+    B --> C[Status: Processando]
+    C --> D[NF gerada automaticamente - 12h dias úteis]
+    D --> E[Status: Concluído]
+    E --> F[Etiqueta gerada / Checkout]
+    F --> G[Laionel imprime e envia]
+    G --> H[Entregue ao cliente]
+```
+
+### Geração de Nota Fiscal
+
+As notas fiscais são geradas automaticamente todos os dias úteis ao **meio-dia** (horário de Brasília). Isso significa:
+
+- Pedidos pagos **antes das 12h** terão NF gerada no mesmo dia.
+- Pedidos pagos **após as 12h** terão NF gerada no dia útil seguinte.
+- Nos **finais de semana**, as NFs acumulam e são geradas na segunda-feira.
+
+### Alteração de Dados do Pedido
+
+A possibilidade de alteração depende do status do pedido:
+
+| Status | Pode Alterar? | O que fazer |
+|--------|---------------|-------------|
+| **Processando** | ✅ Sim | Altere diretamente no WooCommerce. A alteração será refletida no Bling automaticamente. |
+| **Concluído** | ❌ Não | A única opção é tentar contato com a transportadora (Loggi) para solicitar alteração de entrega. |
+
+**Exemplo prático:** Se o cliente errou o número do apartamento e o pedido ainda está como "Processando", você pode corrigir no WooCommerce sem problemas. Se já está "Concluído", a NF já foi gerada e será necessário contatar a Loggi.
+
+### Observações no Pedido
+
+Sempre que houver alguma situação especial (alteração de endereço, problema com cliente, etc.), registre uma **nota no pedido** dentro do WooCommerce. Isso garante que qualquer pessoa consiga entender o histórico do pedido no futuro.
+
+### Pedidos Zerados no Checkout
+
+Pedidos que aparecem com valor zerado no checkout podem ter diversas causas:
+
+1. **Brindes** que precisam ser enviados.
+2. **Trocas antigas** que ainda estão pendentes (sem prefixo TROCA- ou EX-).
+3. **Erros de integração** que podem ser removidos.
+
+Antes de excluir qualquer pedido zerado, verifique a origem.
+
+### Atenção com o Bling
+
+Evite editar estados manualmente no Bling. O sistema de integração é sensível a edições manuais e pode causar problemas. Sempre que possível, faça alterações pelo WooCommerce.
+
+## Envio de Pedidos
+
+Os pedidos são processados pelo Laionel no CD (Centro de Distribuição) em Franca/SP:
+
+1. Pedidos aparecem no checkout do Bling após geração da NF.
+2. Laionel imprime as etiquetas e separa os produtos.
+3. Produtos são embalados e coletados pela transportadora.
+
+**Endereço do CD:** Avenida São Vicente, 7718 — CEP: 14.412-348, Franca/SP.
 
 ## Trocas e Devoluções
 
@@ -84,12 +155,6 @@ Antes de processar um estorno, tente reverter a situação oferecendo alternativ
 
 O objetivo é manter o cliente, pois ele pode converter novamente no futuro.
 
-### Links Úteis para Trocas
-
-- **Últimos Reembolsos:** [elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds](https://elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds)
-- **Pedidos de Troca:** [elevacalcados.com.br/wp-admin/admin.php?page=velzani-troca-orders](https://elevacalcados.com.br/wp-admin/admin.php?page=velzani-troca-orders)
-- **TroqueCommerce:** [elevacalcados.troquecommerce.com.br](https://elevacalcados.troquecommerce.com.br/)
-
 ## Problemas Comuns
 
 ### CEP Inválido
@@ -125,7 +190,7 @@ Pode ser um problema de integração. Informe o time técnico com o número do p
 
 Clientes frequentemente pedem a nota fiscal para conseguir despachar o produto nos Correios. Oriente sobre como acessar a NF do pedido no sistema.
 
-## Compra Segura
+### Cliente Pergunta se a Compra é Segura
 
 Se um cliente perguntar sobre segurança na compra, informe:
 
@@ -133,6 +198,24 @@ Se um cliente perguntar sobre segurança na compra, informe:
 - Em caso de problemas (como fraude), o cliente pode falar com o emissor do cartão de crédito ou com o próprio Mercado Pago para recuperar o dinheiro.
 - Link para compra garantida: [mercadopago.com.br/compragarantida/clientes](https://www.mercadopago.com.br/compragarantida/clientes)
 - Também pode compartilhar nosso perfil no **Reclame Aqui** como referência de atendimento.
+
+### Dúvidas sobre Altura do Calçado
+
+Clientes frequentemente perguntam sobre o aumento de altura dos calçados. A altura total é composta por três partes:
+
+- **Palmilha interna:** Parte que fica em contato com o pé (ex.: 0,2 cm)
+- **Calcanheira:** Elevação interna no calcanhar (ex.: 5,2 cm)
+- **Solado:** Parte externa que toca o chão (ex.: 4,4 cm)
+
+**Importante ao responder:**
+
+1. Cada modelo tem medidas específicas — consulte a página do produto para informar os valores corretos.
+2. Explique que pode haver uma **pequena variação** nas medidas (± alguns milímetros) por ser um produto artesanal.
+3. O **peso do usuário** e o **uso constante** podem causar uma leve compressão na palmilha e calcanheira ao longo do tempo, reduzindo minimamente a altura final.
+
+**Exemplo de resposta:**
+
+> "Este modelo tem aproximadamente X cm de aumento, sendo: palmilha interna (X cm), calcanheira (X cm) e solado (X cm). Vale lembrar que pode haver uma pequena variação por ser produção artesanal, e com o uso diário a altura pode reduzir levemente devido à acomodação natural dos materiais."
 
 ## Documentação de Casos
 
@@ -143,3 +226,12 @@ Sempre que identificar um problema recorrente ou uma solução nova, documente! 
 - Permitir a automação futura (primeiro documentamos o processo manual, depois automatizamos partes dele).
 
 O ideal é descrever cada processo de forma **granular**, passo a passo, para que qualquer pessoa consiga executá-lo.
+
+## Links Rápidos
+
+- **Últimos Reembolsos:** [elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds](https://elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds)
+- **Pedidos de Troca:** [elevacalcados.com.br/wp-admin/admin.php?page=velzani-troca-orders](https://elevacalcados.com.br/wp-admin/admin.php?page=velzani-troca-orders)
+- **Pedidos Bling:** [prod-ops.velzani.com/wp-admin/admin.php?page=velzani-bling-orders&show-orders](https://prod-ops.velzani.com/wp-admin/admin.php?page=velzani-bling-orders&show-orders)
+- **Busca CEP Correios:** [buscacepinter.correios.com.br](https://buscacepinter.correios.com.br/app/endereco/index.php)
+- **TroqueCommerce:** [elevacalcados.troquecommerce.com.br](https://elevacalcados.troquecommerce.com.br/)
+- **Status Mercado Pago:** [status.mercadopago.com](https://status.mercadopago.com/)
