@@ -140,7 +140,11 @@ function vdocs_handle_request() {
     $slug = vdocs_get_current_slug();
     
     if ( $slug === 'notes' ) {
-        vdocs_render_notes_page();
+        if ( VDOCS_NOTES_ENABLED ) {
+            vdocs_render_notes_page();
+            exit;
+        }
+        wp_redirect( vdocs_url( '' ) );
         exit;
     }
     
@@ -170,7 +174,7 @@ function vdocs_render_doc( $file, $slug ) {
     $html_content = vdocs_add_heading_ids( $html_content );
     $nav_items    = vdocs_get_nav_items();
     $current_slug = $slug;
-    $notes        = vdocs_get_doc_notes( $slug );
+    $notes        = VDOCS_NOTES_ENABLED ? vdocs_get_doc_notes( $slug ) : [];
     
     include VDOCS_PATH . 'templates/layout-header.php';
     include VDOCS_PATH . 'templates/page-doc.php';

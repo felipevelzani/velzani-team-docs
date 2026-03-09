@@ -549,6 +549,7 @@
             height: auto;
         }
     </style>
+    <?php if ( VDOCS_NOTES_ENABLED ) : ?>
     <script>
         var vdocsData = {
             ajaxUrl: '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>',
@@ -557,6 +558,7 @@
             isAdmin: <?php echo current_user_can( 'manage_options' ) ? 'true' : 'false'; ?>
         };
     </script>
+    <?php endif; ?>
 </head>
 <body>
     <button class="docs-menu-toggle" onclick="document.querySelector('.docs-sidebar').classList.toggle('open')">

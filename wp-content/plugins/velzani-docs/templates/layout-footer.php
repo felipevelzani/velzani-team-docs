@@ -1,11 +1,13 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
         </main>
     </div>
+    <?php if ( VDOCS_NOTES_ENABLED ) : ?>
     <footer style="position: fixed; bottom: 0; right: 0; padding: 12px 20px; font-size: 12px; color: var(--docs-muted);">
         <a href="<?php echo esc_url( vdocs_url( 'notes' ) ); ?>" style="color: var(--docs-muted); text-decoration: none;">
             Ver notas
         </a>
     </footer>
+    <?php endif; ?>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

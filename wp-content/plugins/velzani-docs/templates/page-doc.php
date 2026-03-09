@@ -31,6 +31,7 @@
     <?php endif; ?>
 </article>
 
+<?php if ( VDOCS_NOTES_ENABLED ) : ?>
 <script>
 (function() {
     var addNoteBtn = null;
@@ -204,3 +205,4 @@
     });
 })();
 </script>
+<?php endif; ?>
