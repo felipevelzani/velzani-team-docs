@@ -227,6 +227,23 @@ Sempre que identificar um problema recorrente ou uma solução nova, documente! 
 
 O ideal é descrever cada processo de forma **granular**, passo a passo, para que qualquer pessoa consiga executá-lo.
 
+## Feedback de Clientes
+
+Registre feedbacks importantes dos clientes na planilha de feedback:
+
+**[Planilha de Feedback de Clientes](https://docs.google.com/spreadsheets/d/1TOKit2dHIBsTodzUqvVtkV9OUu4kXJmyWp00v4kkMQw/edit?usp=sharing)**
+
+Use para registrar:
+- Sugestões de melhorias em produtos
+- Reclamações recorrentes
+- Elogios relevantes
+- Ideias de novos produtos ou funcionalidades
+- Qualquer insight valioso vindo do atendimento
+
+Esses feedbacks ajudam a equipe de produto a entender as necessidades dos clientes e priorizar melhorias.
+
+Quanto mais feedback, melhor. Não tem limite de feedback ou algo assim.
+
 ## Links Rápidos
 
 - **Últimos Reembolsos:** [elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds](https://elevacalcados.com.br/wp-admin/admin.php?page=velzani-last-refunds)
@@ -235,3 +252,4 @@ O ideal é descrever cada processo de forma **granular**, passo a passo, para qu
 - **Busca CEP Correios:** [buscacepinter.correios.com.br](https://buscacepinter.correios.com.br/app/endereco/index.php)
 - **TroqueCommerce:** [elevacalcados.troquecommerce.com.br](https://elevacalcados.troquecommerce.com.br/)
 - **Status Mercado Pago:** [status.mercadopago.com](https://status.mercadopago.com/)
+- **Feedback de Clientes:** [Planilha de Feedback](https://docs.google.com/spreadsheets/d/1TOKit2dHIBsTodzUqvVtkV9OUu4kXJmyWp00v4kkMQw/edit?usp=sharing)
