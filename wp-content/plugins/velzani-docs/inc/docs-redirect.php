@@ -10,11 +10,6 @@ function vdocs_handle_request() {
         return;
     }
     
-    if ( ! is_user_logged_in() ) {
-        wp_redirect( wp_login_url( vdocs_url() ) );
-        exit;
-    }
-    
     $slug = vdocs_get_current_slug();
     
     if ( $slug === 'notes' ) {
