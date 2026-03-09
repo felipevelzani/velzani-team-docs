@@ -18,6 +18,125 @@ Guia completo para atendimento ao cliente da Velzani, incluindo gestão de pedid
 - **Reclame Aqui:** Monitorar e responder contestações.
 - **Mercado Pago:** Acompanhar contestações de pagamento.
 
+## Melhores Práticas de Atendimento
+
+Customer Success, ou o sucesso do cliente, não é somente uma frase, mas uma cultura interna. Em média 80% do crescimento de uma empresa vem do boca a boca. Hoje, esse espaço é ocupado em grande parte por influencers testando produtos e serviços — mas quem sustenta a reputação no dia a dia é o time de atendimento.
+
+O time de marketing e vendas não se sustenta sozinho. Quem analisa e resolve conflitos, questionamentos pós-compra e a avalanche de reclamações é o time de Customer Success. **Não estamos aqui somente para resolver problemas, estamos aqui para encantar os clientes.**
+
+> **Importante:** Dificilmente o cliente entrará em contato para elogios — eles fazem isso publicamente nas redes sociais. O suporte é algo mais restrito, carregado muitas vezes de impaciência e frustração. Isso **não é pessoal**. Não é direcionado a você, pessoa — mas a você, funcionário que representa a empresa. Não leve como ofensa nem deixe abalar seu emocional. Geralmente nem a empresa tem culpa das circunstâncias, pois depende de fornecedores e parceiros externos.
+
+### Estágios ao Lidar com Problemas
+
+Ao receber um novo problema, siga estes três passos:
+
+1. **Cumprimentar e demonstrar empatia.** Agradeça o contato ou valide o sentimento do cliente.
+   - Ex.: *"Oi Marcelo, obrigado pelo contato!"*
+   - Ex.: *"Oi Marcelo, essa realmente não é a experiência que gostaríamos de oferecer!"*
+
+2. **Validar e confirmar que entendeu o problema.**
+   - Ex.: *"Entendo que não está conseguindo rastrear o pedido usando o código de rastreio que fornecemos."*
+
+3. **Oferecer uma solução ou prazo claro.** Se for urgente, priorize e deixe isso explícito para o cliente.
+
+### Guia de Estilo
+
+**Cumprimentando o cliente:**
+
+- ❌ Formal demais: *"Olá, Senhor [nome], como podemos ajudar?"*
+- ❌ Informal demais: *"Oi meu amigo, tudo bem? Como posso ajudar?"*
+- ✅ Tom certo: *"Oi [nome], como podemos ajudar?"*
+- 🎁 Dica: use *"Espero que esteja bem!"* no lugar de *"Tudo bem?"* — evita que a pessoa sinta necessidade de responder e demonstra mais atenção.
+
+**Espaçamento em textos:**
+
+- ❌ Não enviar um grande bloco de texto sem quebras de linha.
+- ✅ Pular uma linha a cada parágrafo para facilitar a leitura.
+- 🎁 No WhatsApp, prefira textos curtos. Como alternativa, envie o conteúdo em múltiplas mensagens.
+
+### Situações Frequentes
+
+**Cliente quer dicas ou tem interesse em comprar:**
+
+- ❌ Não enviar apenas um link genérico para o site.
+- ✅ Recomendar modelos específicos e, quando possível, enviar exemplos. Faça perguntas para entender os objetivos do cliente e criar uma conexão real.
+
+**Cliente pedindo desconto:**
+
+- ❌ Não dizer que não há desconto, nem gerar um cupom diretamente.
+- ✅ Direcionar o cliente para o formulário de cadastro de e-mail — o desconto é gerado por esse caminho.
+
+**Quando o cliente estiver errado:**
+
+- ❌ Não questionar o cliente nem tentar transferir culpa.
+- ✅ Foque 100% em solucionar o problema e encontrar uma saída que encante o cliente.
+
+## Help Scout
+
+Help Scout é uma ferramenta de suporte ao cliente que facilita a comunicação de forma organizada e eficiente.
+
+### Navegando pela Interface
+
+- **Unassigned:** Mostra as mensagens de clientes, incluindo novas solicitações e respostas.
+- **Mine:** Todas as conversas que você atribuiu a si.
+- **Drafts:** Rascunhos de mensagens. Quando em branco, ter a rotina de deletar.
+- **Assigned:** Mensagens atribuídas a outros atendentes. Quando alguém estiver ausente, você pode responder mensagens nessa categoria também.
+- **Closed:** Mensagens encerradas.
+- **Spam:** Mensagens de spam.
+
+**Teams > Atendimento:** Todos os que estiverem no time de atendimento podem ver os tickets atribuídos para esta equipe.
+
+### Views (Filtros por Tags)
+
+- **All:** Todas as mensagens.
+- **Financeiro:** Relacionadas a estorno, pagamentos, entre outros.
+- **Instagram:** Mensagens recebidas pelas redes sociais.
+- **Logística:** Relacionadas a atrasos, endereços errados, recebimentos por outras pessoas, etc.
+- **Pedidos:** Dúvidas e problemas específicos sobre pedidos (numeração, cor, etc.).
+- **Pré Vendas:** Perguntas sobre produtos, entregas, etc.
+- **Reclame Aqui:** Específico para assuntos do Reclame Aqui.
+- **Urgente:** Todos os problemas escalados.
+
+### Respondendo Mensagens
+
+1. Clique em uma mensagem na caixa de entrada para abrir a conversa.
+2. Leia a solicitação do cliente com atenção e pesquise sobre o problema.
+3. Veja sobre a solução com outro colega se tiver dúvidas.
+4. No campo de resposta, utilize as respostas prontas para respostas rápidas e consistentes. Altere o que for necessário para personalizar.
+5. Na área de mensagens, digite `/` para acessar macros (anexos, respostas salvas, imagens, etc.).
+
+### Usando Notas Internas
+
+Se precisar adicionar informações para outros operadores, utilize a seção de notas internas (não visíveis para o cliente).
+
+**Modelo de nota:**
+- **Ocorrência:** O que houve com o cliente / o que o cliente quer.
+- **Feito:** O que você fez para resolver. Precisou pedir a alguém? Precisou escalar? Por quê?
+- **Links usados:** Adicione os links que você verificou para resolver o problema.
+
+### Atribuindo e Organizando Conversas
+
+- **Atribuir:** Clique no ícone de atribuição e selecione o operador desejado.
+- **Tags:** Utilize tags para categorizar conversas. Isso ajuda na organização das Views e na busca futura.
+- **Snooze:** Reagenda o ticket para reabrir em certa data e hora. Útil para quando precisa responder um cliente em determinado momento.
+
+### Status do Ticket
+
+| Status | Descrição |
+|--------|-----------|
+| **Active** | Ticket ativo |
+| **Pending** | Pendente |
+| **Closed** | Fechado, já resolvido (acontece automaticamente após algumas horas sem resposta) |
+| **Spam** | Emails de spam |
+
+### Outras Opções
+
+- **Follow:** Seguir o ticket para aprender ou acompanhar a solução.
+- **Forward:** Repassar o ticket para outra pessoa por email.
+- **Move:** Mudar o ticket de caixa de entrada.
+- **Hide details:** Ocultar a barra lateral de informações do cliente.
+- **Delete:** Apagar o ticket (não recomendado).
+
 ## Dicas para Atendimento
 
 ### Gerenciamento de Chats
@@ -138,6 +257,16 @@ flowchart TD
    - No WooCommerce, alterar o status do pedido para **Reembolsado**.
    - Se o pedido estiver no checkout, clicar em **Apagar** para removê-lo da fila de envio.
 4. **Muito importante:** Nunca fazer estorno "manual" no WooCommerce sem realmente processar o reembolso ao cliente. Estorno manual apenas altera o status, mas **NÃO** devolve o dinheiro. Se o status foi alterado manualmente para "Reembolsado", o cliente NÃO recebeu o dinheiro e ainda pode-se seguir com a troca.
+
+### Link de Troca para o Cliente
+
+O cliente pode iniciar o processo de devolução ou troca diretamente pelo portal:
+
+**[troquecommerce.com.br](https://www.troquecommerce.com.br/)**
+
+### Reclame Aqui — Experimento de Prioridade
+
+Atualmente, estamos testando uma estratégia para aumentar a resolução de trocas via Reclame Aqui. Ao atender um pedido de troca, informe ao cliente que abrir uma solicitação pelo Reclame Aqui garante **prioridade e processamento mais rápido**. Sugira que crie a reclamação lá para agilizar o processo.
 
 ### Cancelamento de Pedido
 
