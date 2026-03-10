@@ -346,6 +346,26 @@ Clientes frequentemente perguntam sobre o aumento de altura dos calçados. A alt
 
 > "Este modelo tem aproximadamente X cm de aumento, sendo: palmilha interna (X cm), calcanheira (X cm) e solado (X cm). Vale lembrar que pode haver uma pequena variação por ser produção artesanal, e com o uso diário a altura pode reduzir levemente devido à acomodação natural dos materiais."
 
+### Dúvidas sobre Ajuste — "O Calçado é Apertado?"
+
+Clientes podem perguntar se o calçado é apertado, especialmente em modelos com palmilha elevada. A resposta é simples: **não**.
+
+**Por que nossos calçados não são apertados:**
+
+- Todos os modelos com palmilha maior têm a **estrutura projetada para acompanhar** essa palmilha.
+- O calçado é fabricado com espaço interno proporcional — a elevação não "rouba" espaço do pé.
+- Se o cliente ouviu relatos de aperto, pode ter sido um **problema pontual de produção no passado** (palmilha errada, numeração inconsistente), mas isso não reflete a produção atual.
+
+**Como responder:**
+
+1. Afirme com confiança que o calçado **não é apertado**.
+2. Explique que a estrutura é maior para acomodar a palmilha elevada.
+3. Se o cliente insistir em um caso específico, peça mais detalhes para investigar.
+
+**Exemplo de resposta:**
+
+> "Nossos calçados não são apertados! Todos os modelos que têm palmilha elevada são produzidos com uma estrutura maior, justamente para acomodar essa palmilha. Então o espaço interno continua confortável. Se alguém teve alguma experiência diferente, pode ter sido um caso pontual de produção no passado, mas na nossa linha atual isso não acontece."
+
 ## Documentação de Casos
 
 Sempre que identificar um problema recorrente ou uma solução nova, documente! A documentação é essencial para:
